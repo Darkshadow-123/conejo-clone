@@ -58,7 +58,7 @@ export default function Footer() {
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className="inline font-sans text-[14.9433px] font-light leading-[26.8979px] text-ink hover:opacity-70"
+                    className="inline font-sans text-footerlink font-light text-ink hover:opacity-70"
                   >
                     {item.name}
                   </a>
@@ -75,7 +75,7 @@ export default function Footer() {
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className="inline font-sans text-[14.9433px] font-light leading-[26.8979px] text-ink hover:opacity-70"
+                    className="inline font-sans text-footerlink font-light text-ink hover:opacity-70"
                   >
                     {item.name}
                   </a>
@@ -88,28 +88,28 @@ export default function Footer() {
           <div className="w-full lg:w-[239px] lg:h-[272px] shrink-0">
             <Eyebrow className="inline">Contact</Eyebrow>
             <address className="mt-4 flex flex-col gap-0 not-italic">
-              <span className="inline font-sans text-[14.9433px] font-light leading-[26.8979px] text-ink">
+              <span className="inline font-sans text-footerlink font-light text-ink">
                 925 Broadbeck Dr
               </span>
-              <span className="inline font-sans text-[14.9433px] font-light leading-[26.8979px] text-ink">
+              <span className="inline font-sans text-footerlink font-light text-ink">
                 Suites 200 and 225
               </span>
-              <span className="inline font-sans text-[14.9433px] font-light leading-[26.8979px] text-ink">
+              <span className="inline font-sans text-footerlink font-light text-ink">
                 Newbury Park, CA 91320
               </span>
               <a
                 href="mailto:info@conejovalleycounseling.com"
-                className="inline font-sans text-[14.9433px] font-light leading-[26.8979px] text-ink hover:opacity-70"
+                className="inline font-sans text-footerlink font-light text-ink hover:opacity-70"
               >
                 info@conejovalleycounseling.com
               </a>
               <a
                 href="tel:8052423120"
-                className="inline font-sans text-[14.9433px] font-light leading-[26.8979px] text-ink hover:opacity-70"
+                className="inline font-sans text-footerlink font-light text-ink hover:opacity-70"
               >
                 805.242.3120
               </a>
-              <span className="mt-4 inline font-sans text-[14.9433px] font-light leading-[26.8979px] text-ink italic">
+              <span className="mt-4 inline font-sans text-footerlink font-light text-ink italic">
                 Serving Thousand Oaks, Westlake Village, Camarillo, Moorpark,
                 &amp; Simi Valley
               </span>
@@ -119,49 +119,49 @@ export default function Footer() {
       </div>
 
       <div className="mx-auto flex h-[40px] w-full max-w-site items-center bg-teal font-sans text-body font-light text-ink">
-        <div className="flex flex-wrap items-center gap-2 px-[91px] font-sans text-[14.9433px] font-light leading-[26.8979px] text-ink">
+        <div className="flex flex-wrap items-center gap-2 px-[91px] font-sans text-footerlink font-light text-ink">
           <a
             href="https://www.conejovalleycounseling.com/terms"
-            className="inline-block h-[27px] font-sans text-[14.9433px] font-light leading-[26.8979px] text-tan hover:opacity-80"
+            className="inline-block h-[27px] font-sans text-footerlink font-light text-tan hover:opacity-80"
           >
-            <span className="inline font-sans text-[14.9433px] font-light leading-[26.8979px] text-white">
+            <span className="inline font-sans text-footerlink font-light text-white">
               Terms
             </span>
           </a>
-          <span className="inline font-sans text-[14.9433px] font-light leading-[26.8979px] text-tan">
+          <span className="inline font-sans text-footerlink font-light text-tan">
             |
           </span>
           <a
             href="https://www.conejovalleycounseling.com/privacy-policy"
-            className="inline-block h-[27px] font-sans text-[14.9433px] font-light leading-[26.8979px] text-tan hover:opacity-80"
+            className="inline-block h-[27px] font-sans text-footerlink font-light text-tan hover:opacity-80"
           >
-            <span className="inline font-sans text-[14.9433px] font-light leading-[26.8979px] text-white">
+            <span className="inline font-sans text-footerlink font-light text-white">
               Privacy Policy
             </span>
           </a>
-          <span className="inline font-sans text-[14.9433px] font-light leading-[26.8979px] text-tan">
+          <span className="inline font-sans text-footerlink font-light text-tan">
             |
           </span>
           <a
             href="https://www.conejovalleycounseling.com/disclaimer"
-            className="inline-block h-[27px] font-sans text-[14.9433px] font-light leading-[26.8979px] text-tan hover:opacity-80"
+            className="inline-block h-[27px] font-sans text-footerlink font-light text-tan hover:opacity-80"
           >
-            <span className="inline font-sans text-[14.9433px] font-light leading-[26.8979px] text-white">
+            <span className="inline font-sans text-footerlink font-light text-white">
               Disclaimer
             </span>
           </a>
-          <span className="inline font-sans text-[14.9433px] font-light leading-[26.8979px] text-tan">
+          <span className="inline font-sans text-footerlink font-light text-tan">
             |
           </span>
-          <span className="inline-block h-[27px] font-sans text-[14.9433px] font-light leading-[26.8979px] text-tan">
-            <span className="inline font-sans text-[14.9433px] font-light leading-[26.8979px] text-white">
+          <span className="inline-block h-[27px] font-sans text-footerlink font-light text-tan">
+            <span className="inline font-sans text-footerlink font-light text-white">
               Website by{" "}
             </span>
             <a
               href="https://walkerstrategyco.com"
-              className="inline-block font-sans text-[14.9433px] font-light leading-[26.8979px] text-tan hover:opacity-80"
+              className="inline-block font-sans text-footerlink font-light text-tan hover:opacity-80"
             >
-              <span className="inline font-sans text-[14.9433px] font-light leading-[26.8979px] text-white">
+              <span className="inline font-sans text-footerlink font-light text-white">
                 Walker Strategy Co.
               </span>
             </a>

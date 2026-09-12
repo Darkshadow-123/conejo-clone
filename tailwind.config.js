@@ -42,6 +42,8 @@ module.exports = {
         // / 1.33964px letter-spacing / 1.33964px 0px padding (DevTools computed).
         // Visually "heavier" than btn because of the larger size + tight tracking.
         navlink: ["13.3964px", { lineHeight: "24.1135px", letterSpacing: "1.33964px" }],
+        // Footer link/content style — 14.9433px / 26.8979px line-height (DevTools computed).
+        footerlink: ["14.9433px", { lineHeight: "26.8979px" }],
       },
       maxWidth: {
         site: "1321px", // confirmed container max-width, repeats across 7+ sections
