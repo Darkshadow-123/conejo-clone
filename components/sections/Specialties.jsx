@@ -3,38 +3,33 @@ import TextLink from "../ui/TextLink";
 
 const SPECIALTIES = [
   {
-    heading: "Trauma",
-    body: "We don\u2019t always know when and how we\u2019ve experienced trauma. In therapy, we\u2019ll work together to help you process your past, understand what\u2019s causing you to stay \u201cstuck,\u201d and regain a sense of safety, control, and hope. You don\u2019t have to carry your burdens alone.",
-    href: "https://www.conejovalleycounseling.com/trauma-counseling-newbury-park",
+    heading: "Anxiety & Panic Therapy",
+    body: "Constant worry, racing thoughts, and panic can leave you feeling like you\u2019re always bracing for something to go wrong. In our Santa Monica therapy sessions, we work together to calm your nervous system, process root triggers, and restore lasting inner peace.",
+    href: "#contact",
   },
   {
-    heading: "EMDR",
-    body: "Eye Movement Desensitization and Reprocessing (EMDR) is a powerful therapeutic technique that helps process and heal trauma by reworking how painful memories are stored in your brain. This allows you to find relief and move toward lasting healing.",
-    href: "https://www.conejovalleycounseling.com/emdr-therapy-newbury-park",
+    heading: "Trauma Therapy & EMDR",
+    body: "As an experienced trauma therapist in Santa Monica, I utilize Eye Movement Desensitization and Reprocessing (EMDR) to help you process single-incident and complex trauma, reworking painful memories with safety and stabilization as the foundation.",
+    href: "#contact",
   },
   {
-    heading: "Dissociation",
-    body: "The feeling of losing time, hearing conflicting voices, or questioning your sense of self can be overwhelming. In therapy, we\u2019ll help you understand these experiences, recognize your own triggers, and create a sense of balance and identity so that you can feel more grounded.",
-    href: "https://www.conejovalleycounseling.com/dissociative-identity-disorder-therapist-newbury-park",
-  },
-  {
-    heading: "Special Needs Parenting",
-    body: "Parenting a child with special needs presents unique challenges and complex emotions. We provide compassionate support through lived experience and expertise to help you navigate this journey with tools, understanding, and self-care.",
-    href: "https://www.conejovalleycounseling.com/counseling-special-needs-parents-newbury-park",
+    heading: "Burnout & High-Achiever Stress",
+    body: "Designed for Santa Monica entrepreneurs, executives, and creative professionals experiencing burnout. Therapy provides a dedicated space to release internal pressure, reconnect with purpose, and build sustainable ways of living and working.",
+    href: "#contact",
   },
 ];
 
 export default function Specialties() {
   return (
-    /*  Confirmed: 1321×966px, bg-white.
+    /*  Confirmed: 1321×966px, bg-stone.
         Desktop uses absolute positioning so H3 (92px from top) and cards (111px from
         top) can have different top offsets independently — impossible with normal flow. */
-    <section className="relative bg-white lg:h-[966px]">
+    <section id="specialties" className="relative bg-stone lg:h-[966px]">
 
       {/* ── H3 ─────────────────────────────────────────────────────────────────────
           Mobile: normal flow with py padding.
           Desktop: absolute, confirmed 117px from left, 92px from top, 339px wide. */}
-      <h3 className="px-6 pt-[88px] font-serif text-h3 font-light text-ink
+      <h3 className="px-6 pt-[88px] font-serif text-h3 font-light text-slate
                      lg:absolute lg:left-[117px] lg:top-[92px] lg:w-[339px]
                      lg:px-0 lg:pt-0">
         Our <Script>specialties</Script> include&hellip;
@@ -58,10 +53,10 @@ export default function Specialties() {
                 Height (275px) is now explicitly set so shorter text (like Special Needs)
                 doesn't break the uniform dimensions of the grid. */}
             <div className="lg:h-[275px]">
-              <h4 className="font-serif text-h4 font-light text-ink">
+              <h4 className="font-serif text-h4 font-light text-slate">
                 {item.heading}
               </h4>
-              <p className="mt-[30px] font-sans text-body text-ink lg:h-[180px]">
+              <p className="mt-[30px] font-sans text-body text-slate lg:h-[180px]">
                 {item.body}
               </p>
             </div>

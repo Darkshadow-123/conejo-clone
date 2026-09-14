@@ -6,7 +6,7 @@ export default function Honoring() {
     /*  Confirmed outer wrapper: 1321×681px, display:flex, justify-content:center,
         padding: 88.199px 0px (top/bottom only).
         88.199 + 505 (inner grid) + 88.199 = 681.4 ≈ 681px ✓ */
-    <section className="bg-white py-[88.199px]">
+    <section className="bg-oatmeal py-[88.199px]">
       {/*  Inner grid: 1321×505px.
            Squarespace fluid engine: 26 cols, 14 rows, gap:11px.
            Image spans cols 1-14 → width 705px.
@@ -26,7 +26,7 @@ export default function Honoring() {
              pl-[11px]: the Squarespace 11px column gap between image and text.
              pr-[67px]: 67px right margin (confirmed).
              self-end: Squarespace places H2 in the lower rows → bottom-aligned. */}
-        <h2 className="w-[488px] shrink-0 self-end ml-4 pr-4 font-serif text-h2 font-light text-ink lg:ml-[61px] lg:pr-0">
+        <h2 className="w-[488px] shrink-0 self-end ml-4 pr-4 font-serif text-h2 font-light text-slate lg:ml-[61px] lg:pr-0">
           Honoring where you&rsquo;ve been <Script>&amp;</Script> helping
           shape where you&rsquo;re headed.
         </h2>

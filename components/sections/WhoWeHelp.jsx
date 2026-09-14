@@ -4,33 +4,33 @@ import TintedImage from "../ui/TintedImage";
 
 const CARDS = [
   {
-    heading: "Adults",
+    heading: "High-Achieving Professionals",
     href: null,
-    body: "Feeling stuck or overwhelmed? We help adults find clarity, build resilience, and move forward with confidence by addressing the root causes of anxiety, stress, and emotional pain.",
-    img: "https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/066f60e6-1354-4d47-a586-ab3f2f2ba612/Jennifer+A+-+Images+%288%29.jpg",
-    alt: "Two people sitting on a log at the beach, facing a lake with mountains in the background",
+    body: "Many of the clients I see in Santa Monica are entrepreneurs, creatives, or executives who feel disconnected after years of chronic stress. Therapy provides a dedicated space to slow down, drop internal pressure, and cultivate sustainable wellbeing.",
+    img: "/images/High-Achieving-Professionals.jpg",
+    alt: "High-achieving professional in Santa Monica taking a mindful pause",
   },
   {
-    heading: "Couples",
-    href: "https://www.conejovalleycounseling.com/couples-therapy",
-    body: "Relationships require effort, and we\u2019re here to help you strengthen yours. We guide couples through challenges like communication breakdowns and trust issues, helping you rebuild intimacy and strengthen your relationship.",
-    img: "https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/d0157712-388c-4800-aada-c78db97ee966/Jennifer+A+-+Images+%289%29.jpg",
-    alt: "A couple embracing on the beach, smiling at each other, ocean in the background",
+    heading: "Overwhelmed Adults",
+    href: null,
+    body: "Adults across West Los Angeles frequently seek therapy feeling high-functioning on the outside while experiencing constant worry, physical tension, or insomnia. We integrate evidence-based tools to soothe your nervous system and restore balance.",
+    img: "/images/Overwhelmed-Adults.jpg",
+    alt: "Adult decompressing in a calm therapy session environment",
   },
   {
-    heading: "Children & Teens",
-    href: "https://www.conejovalleycounseling.com/children-and-teens",
-    body: "Kids need support, too. We help them process big emotions, cope with challenging family situations, build coping skills, and feel understood, while also working closely with their parents to create a nurturing environment.",
-    img: "https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/d5d62bf4-34a7-4bf4-bf00-e1169863ace7/Jennifer+A+-+Images+%2810%29.jpg",
-    alt: "A boy carrying a girl on a beach with waves in the background",
+    heading: "Trauma Survivors",
+    href: null,
+    body: "Whether navigating single-event trauma or complex relational patterns, our trauma therapy in Santa Monica is paced carefully. Utilizing EMDR and somatic stabilization, we restore safety, empowerment, and emotional resilience.",
+    img: "/images/Trauma-survivors.jpg",
+    alt: "Trauma recovery client experiencing emotional grounding and peace",
   },
 ];
 
 export default function WhoWeHelp() {
   return (
-    <section className="bg-white">
+    <section className="bg-stone">
       <Container className="py-[88px]">
-        <h2 className="mb-12 font-serif text-h2 font-light text-ink ml-[10px]">
+        <h2 className="mb-12 font-serif text-h2 font-light text-slate ml-[10px]">
           Who we <Script>help</Script>
         </h2>
 
@@ -44,16 +44,16 @@ export default function WhoWeHelp() {
                 sizes="(min-width: 768px) 33vw, 100vw"
                 className="aspect-[332/394]"
               />
-              <h4 className="mt-12 font-serif text-h4 font-light text-ink">
+              <h4 className="mt-12 font-serif text-h4 font-light text-slate">
                 {card.href ? (
-                  <a href={card.href} className="hover:text-teal">
+                  <a href={card.href} className="hover:text-rust">
                     {card.heading}
                   </a>
                 ) : (
                   card.heading
                 )}
               </h4>
-              <p className="mt-[30px] font-sans text-body text-ink">{card.body}</p>
+              <p className="mt-[30px] font-sans text-body text-slate">{card.body}</p>
             </div>
           ))}
         </div>

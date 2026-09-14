@@ -3,20 +3,20 @@ import Eyebrow from "../ui/Eyebrow";
 import Script from "../ui/Script";
 
 const COLUMN_ONE = [
-  { name: "Dissociation", href: "https://www.conejovalleycounseling.com/dissociative-identity-disorder-therapist-newbury-park" },
-  { name: "Trauma", href: "https://www.conejovalleycounseling.com/trauma-counseling-newbury-park" },
-  { name: "Family conflict", href: null },
-  { name: "Special needs parenting", href: "https://www.conejovalleycounseling.com/counseling-special-needs-parents-newbury-park" },
-  { name: "Depression", href: "https://www.conejovalleycounseling.com/anxiety-depression" },
-  { name: "Marriage", href: "https://www.conejovalleycounseling.com/couples-therapy" },
+  { name: "Anxiety", href: "#specialties" },
+  { name: "Panic attacks", href: "#specialties" },
+  { name: "Trauma & PTSD", href: "#specialties" },
+  { name: "EMDR", href: "#specialties" },
+  { name: "Burnout", href: "#specialties" },
+  { name: "Somatic therapy", href: "#approach" },
 ];
 
 const COLUMN_TWO = [
-  { name: "Anxiety", href: "https://www.conejovalleycounseling.com/anxiety-depression" },
-  { name: "Relationships", href: null },
-  { name: "Children", href: "https://www.conejovalleycounseling.com/children-and-teens" },
-  { name: "Teens", href: "https://www.conejovalleycounseling.com/children-and-teens" },
-  { name: "Intimacy & connection", href: "https://www.conejovalleycounseling.com/couples-therapy" },
+  { name: "Perfectionism", href: null },
+  { name: "Life transitions", href: null },
+  { name: "High-achievers & entrepreneurs", href: "#specialties" },
+  { name: "Mindfulness-based therapy", href: "#approach" },
+  { name: "Stress management", href: null },
   { name: "…and more.", href: null },
 ];
 
@@ -25,7 +25,7 @@ const COLUMN_TWO = [
    - Text: 15px Muli / line-height 27px / weight 300 / uppercase (Eyebrow token ✓)
    - Items align to top-left of the wrapper: pt-0 pb-[36px]
    - 0(pt) + 27(text) + 36(pb) = 63px ✓
-   - border-b border-tan 12px above the bottom on all items except last */
+   - border-b border-greige 12px above the bottom on all items except last */
 function ExpertiseColumn({ items }) {
   return (
     <ul className="flex flex-col gap-[11px]">
@@ -35,12 +35,11 @@ function ExpertiseColumn({ items }) {
           <li key={item.name}>
             <Eyebrow
               as="div"
-              className={`pt-0 ${
-                isLast ? "pb-[36px]" : "pb-[24px] mb-[12px] border-b border-tan"
-              }`}
+              className={`pt-0 ${isLast ? "pb-[36px]" : "pb-[24px] mb-[12px] border-b border-greige"
+                }`}
             >
               {item.href ? (
-                <a href={item.href} className="hover:text-teal">
+                <a href={item.href} className="hover:text-rust">
                   {item.name}
                 </a>
               ) : (
@@ -56,12 +55,12 @@ function ExpertiseColumn({ items }) {
 
 export default function AreasOfExpertise() {
   return (
-    <section className="bg-white">
+    <section className="bg-stone">
       <Container className="py-[106.908px]">
 
         {/* Mobile: simple stacked layout */}
         <div className="flex flex-col gap-4 lg:hidden">
-          <h3 className="font-serif text-h3 font-light text-ink">
+          <h3 className="font-serif text-h3 font-light text-slate">
             Our areas of<br /><Script>expertise</Script>
           </h3>
           <ExpertiseColumn items={COLUMN_ONE} />
@@ -80,7 +79,7 @@ export default function AreasOfExpertise() {
         <div className="hidden lg:flex lg:items-start">
           {/* pl-[50px] indents the h3 text 50px within the 289px column
               without shifting the column box right (unlike ml-[50px] would). */}
-          <h3 className="w-[289px] shrink-0 mr-[110px] pl-[50px] font-serif text-h3 font-light text-ink">
+          <h3 className="w-[289px] shrink-0 mr-[110px] pl-[50px] font-serif text-h3 font-light text-slate">
             Our areas of<br /><Script>expertise</Script>
           </h3>
           <div className="w-[388px] shrink-0 mr-[12px]">

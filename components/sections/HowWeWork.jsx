@@ -4,10 +4,10 @@ import TintedImage from "../ui/TintedImage";
 
 export default function HowWeWork() {
   return (
-    /*  Confirmed: 1321×918px, bg-tan.
+    /*  Confirmed: 1321×918px, bg-greige.
         lg:h-[918px] locks the section to exactly 918px so text column height
         cannot push it taller. The image is placed in a grid column with gap-6. */
-    <section className="relative bg-tan lg:h-[915px] lg:overflow-hidden">
+    <section className="relative bg-greige lg:h-[915px] lg:overflow-hidden">
       <div className="mx-auto grid w-full max-w-site grid-cols-1 gap-6 py-section-lg lg:grid-cols-[1fr_298px] lg:h-full">
         {/* Text column — confirmed 117px from section left.
             lg:pr-0 removes the old absolute offset; gap-6 keeps text clear of the image. */}
@@ -15,42 +15,33 @@ export default function HowWeWork() {
           <div className="flex flex-col gap-32">
             <Eyebrow>How we work</Eyebrow>
 
-            <h2 className="max-w-[840px] font-serif text-h2 font-light text-ink">
-              We&rsquo;re here to make a difference.
+            <h2 className="max-w-[840px] font-serif text-h2 font-light text-slate">
+              Practical tools, real depth &mdash; therapy that fits your
+              life.
             </h2>
           </div>
           <div className="grid max-w-[784px] grid-cols-1 gap-5 md:grid-cols-2">
             <div className="flex flex-col gap-5">
               <Eyebrow>
-                The clients we work with are balancing so many things at
-                once, it&rsquo;s often hard for them to put themselves
+                The clients I work with are balancing so many responsibilities, it&rsquo;s often hard for them to put themselves
                 first.
               </Eyebrow>
-              <p className="font-sans text-body text-ink">
-                Here, your needs are always top priority. Our team takes the
-                time to deeply listen to our clients in order to truly
-                understand their story and their struggles. We recognize
-                that no two people are the same and that personalized
-                therapy means an intentional, tailored approach. (You
-                won&rsquo;t find anything &ldquo;one-size-fits-all&rdquo;
-                here.) If you&rsquo;re ready to do the work, we&rsquo;re
-                ready to help.
+              <p className="font-sans text-body text-slate">
+                In my Santa Monica practice, your well-being is top priority. I take the
+                time to deeply listen and truly understand your story and personal goals. Personalized
+                therapy means an intentional, tailored approach &mdash; never a &ldquo;one-size-fits-all&rdquo; blueprint. If you&rsquo;re ready to begin, I am here to guide you.
               </p>
-              <TextLink href="https://www.conejovalleycounseling.com/therapists-newbury-park" className="w-fit mt-7">
-                Learn more about us
+              <TextLink href="#about" className="w-fit mt-7">
+                Learn more about Dr. Reynolds
               </TextLink>
             </div>
 
-            <p className="font-sans text-body text-ink">
-              Sometimes we may gently challenge you to look at things
-              differently and other times we may explore your emotions, all
-              while encouraging you to practice what you&rsquo;ve learned in
-              your daily life. We take what we do seriously because we know
-              how important it is for you to heal from what&rsquo;s hurting
-              you, discover a fulfilling life, and build meaningful
-              relationships. Our goal is to walk alongside you in this
-              journey, offering support and guidance as you uncover your
-              strengths and embrace what the future can hold for you.
+            <p className="font-sans text-body text-slate">
+              Trauma therapy and anxiety recovery are paced carefully, with an emphasis on emotional safety and nervous system stabilization. My approach is warm, collaborative, and grounded &mdash;
+              integrating CBT, EMDR, mindfulness, and somatic techniques to address both the emotional and
+              physiological sides of what you&rsquo;re experiencing. The goal
+              isn&rsquo;t only symptom relief; it&rsquo;s helping you build
+              enduring insight, resilience, and clarity in daily life.
             </p>
           </div>
         </div>

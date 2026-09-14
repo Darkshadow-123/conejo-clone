@@ -18,10 +18,11 @@ export default function PhotoStatement() {
         {/* Confirmed: this text uses the exact H2 scale, colored with the
             lightAccent token (#F6F4EE), not pure white. */}
         <p className="max-w-3xl font-serif text-h2 font-light text-cream">
-          You deserve a place where your story is heard, valued, and
+          You deserve a space where your story is heard, valued, and
           understood.{" "}
           <em className="italic">
-            Nothing will be too heavy for us to carry together.
+            Nothing you&rsquo;re carrying is too heavy to bring into the
+            room.
           </em>
         </p>
       </div>
