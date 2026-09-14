@@ -11,11 +11,12 @@ module.exports = {
       // --darkAccent-hsl) converted from HSL, plus DevTools computed-style
       // checks on individual elements. See design-audit.md Section 2.
       colors: {
-        ink: "#2B2B2B", // --black-hsl -> default text color everywhere
-        pureblack: "#000000", // --safeDarkAccent-hsl -> hover-fill state
-        cream: "#F6F4EE", // --lightAccent-hsl -> hero/empathy/final-CTA bg
-        tan: "#E3D9CA", // --accent-hsl / --safeLightAccent-hsl -> "How We Work" bg
-        teal: "#86B3B3", // --darkAccent-hsl -> script-accent color
+        stone: "#FCFAF8", // Main background (was cream/white)
+        slate: "#332F2C",     // replaces 'ink' (text)
+        charcoal: "#181514",  // replaces 'pureblack' (hovers)
+        oatmeal: "#F8F6F1",   // replaces 'cream' (light backgrounds)
+        greige: "#E4E3E1",    // replaces 'tan' (darker backgrounds)
+        rust: "#8C552B",      // replaces 'teal' (accents/scripts)
       },
       // ---- Fonts: the live site uses licensed commercial fonts
       // (beaufort-pro, Muli, PrintedMoments) that can't legally be bundled
