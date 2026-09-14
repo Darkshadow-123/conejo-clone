@@ -10,7 +10,7 @@ export default function About() {
       <Container className="py-section-md">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[380px_1fr] lg:gap-[90px]">
           <TintedImage
-            src="/images/Dr. Maya Reynolds.png"
+            src="/images/Dr-Maya-Reynolds.png"
             alt="Portrait of Dr. Maya Reynolds, PsyD, smiling warmly"
             tint="tan-light"
             sizes="(min-width: 1024px) 380px, 100vw"
