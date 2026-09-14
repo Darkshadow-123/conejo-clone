@@ -158,8 +158,6 @@ tailwind.config.js — All design tokens: colors, type scale, spacing, container
 ## ⚠️ Known Limitations
 
 1. **Fonts are substitutes** — licensed originals (`beaufort-pro`, `PrintedMoments`) cannot be bundled. Swap via `app/layout.js` if you have licenses.
-2. **Mobile nav is a placeholder toggle** — hamburger icon renders, but the drawer/accordion is not wired up. The live site's mobile behavior was not fully inspected.
-3. **FAQs use `"use client"`** — the animated accordion requires React `useState`. This is intentional and compatible with Next.js App Router.
 
 ---
 

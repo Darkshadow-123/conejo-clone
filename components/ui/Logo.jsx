@@ -5,7 +5,7 @@ export default function Logo({ className = "", align = "center" }) {
       <span
         className="font-serif font-normal text-slate tracking-tight"
         style={{
-          fontSize: "36px",
+          fontSize: "clamp(18px, 4vw, 36px)",
           letterSpacing: "-0.5px",
           lineHeight: "1.2",
         }}
@@ -15,7 +15,7 @@ export default function Logo({ className = "", align = "center" }) {
       <span
         className="font-sans uppercase text-rust tracking-widest"
         style={{
-          fontSize: "12px",
+          fontSize: "clamp(9px, 1.5vw, 12px)",
           fontWeight: 500,
           letterSpacing: "1.8px",
           marginTop: "3px",
