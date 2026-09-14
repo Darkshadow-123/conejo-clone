@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Container from "../ui/Container";
 import PillButton from "../ui/PillButton";
+import Logo from "../ui/Logo";
 
 const OUR_TEAM = [
   { name: "Jennifer Anderson, LMFT", href: "https://www.conejovalleycounseling.com/jennifer-anderson" },
@@ -43,11 +44,11 @@ function NavDropdown({ label, items }) {
           ~1px 6px padding and a 2px border to <button> by default; Tailwind
           preflight removes the background and appearance but not the padding,
           so it must be zeroed explicitly. */}
-      <button className="border-0 bg-transparent p-0 py-[1.33964px] font-sans font-light text-navlink uppercase text-ink">{label}</button>
+      <button className="border-0 bg-transparent p-0 py-[1.33964px] font-sans font-light text-navlink uppercase text-slate">{label}</button>
       <div
         className="
           invisible absolute left-1/2 top-full z-20 w-64 -translate-x-1/2
-          rounded-md border border-tan bg-cream py-3 opacity-0 shadow-lg
+          rounded-md border border-greige bg-stone py-3 opacity-0 shadow-lg
           transition-all duration-200
           group-hover:visible group-hover:opacity-100
         "
@@ -56,7 +57,7 @@ function NavDropdown({ label, items }) {
           <a
             key={item.name}
             href={item.href}
-            className="block px-5 py-2 font-sans text-[14px] text-ink hover:text-teal"
+            className="block px-5 py-2 font-sans text-[14px] text-slate hover:text-rust"
           >
             {item.name}
           </a>
@@ -83,7 +84,7 @@ function NavDropdown({ label, items }) {
  */
 export default function Header() {
   return (
-    <header className="bg-cream">
+    <header className="bg-stone">
       <Container className="!px-[66.8174px] py-[18.7089px]">
 
         <div className="flex min-h-[75px] items-center justify-between">
@@ -92,32 +93,26 @@ export default function Header() {
               align-items:center. justify-between pushes logo left and nav right
               within the 67% container. */}
           <div className="flex flex-1 min-w-0 items-center justify-between">
-            <a href="https://www.conejovalleycounseling.com/" className="shrink-0">
-              <Image
-                src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7116bf54-a0e1-4128-81d8-24fd9960c7ed/Conejo+Valley+Counseling+Logo.png?format=1500w"
-                alt="Conejo Valley Family Counseling"
-                width={257}
-                height={75}
-                priority
-                className="h-[75px] w-[257px]"
-              />
+            <a href="/" className="shrink-0 transition-opacity hover:opacity-90">
+              <Logo align="left" />
             </a>
 
             {/* .header-nav-list — confirmed: display:inline-flex, flex-wrap:wrap,
                 justify-content:flex-end, text-align:right. inline-flex + justify-end
                 pushes all links flush to the right edge of the 67% container. */}
             <nav className="hidden items-center justify-end gap-8 lg:flex">
-              <a href="https://www.conejovalleycounseling.com/therapists-newbury-park" className="flex h-[27px] items-center py-[1.33964px] font-sans font-light text-navlink uppercase text-ink">About</a>
-              <NavDropdown label="Our Team" items={OUR_TEAM} />
+              <a href="#about" className="flex h-[27px] items-center py-[1.33964px] font-sans font-light text-navlink uppercase text-slate">About</a>
               <NavDropdown label="Specialties" items={SPECIALTIES} />
               <NavDropdown label="Methods" items={METHODS} />
-              <a href="https://www.conejovalleycounseling.com/faqs" className="flex h-[27px] items-center py-[1.33964px] font-sans font-light text-navlink uppercase text-ink">FAQs</a>
+              <a href="#office" className="flex h-[27px] items-center py-[1.33964px] font-sans font-light text-navlink uppercase text-slate">Our Office</a>
+              <a href="#faqs" className="flex h-[27px] items-center py-[1.33964px] font-sans font-light text-navlink uppercase text-slate">FAQs</a>
+              <a href="#contact" className="flex h-[27px] items-center py-[1.33964px] font-sans font-light text-navlink uppercase text-slate">Contact</a>
             </nav>
           </div>
 
           {/* .header-actions--right — confirmed: 144×47px, flex, justify-content:flex-end */}
           <div className="hidden w-[144px] items-center justify-end lg:flex">
-            <PillButton href="https://www.conejovalleycounseling.com/contact">
+            <PillButton href="#contact">
               Contact
             </PillButton>
           </div>
