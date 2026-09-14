@@ -6,13 +6,13 @@ export default function Empathy() {
     /*  Confirmed: outer section 1321×861px, display:flex, justify-content:center,
         padding: 93.5443px 0px (top/bottom only).
         We replicate the centering with mx-auto max-w-site on the inner flex row. */
-    <section className="bg-cream py-[93.5443px] lg:min-h-[861px]">
-      <div className="mx-auto flex w-full max-w-site items-start">
+    <section className="bg-cream py-section-md lg:min-h-[861px]">
+      <div className="mx-auto grid w-full max-w-site grid-cols-1 items-start lg:grid-cols-[1fr_399px]">
 
         {/* Text column — confirmed 117px from section left.
-            flex-1 fills (1321 - 399 = 922px); pl-[117px] creates the 117px offset;
+            pl-[117px] creates the 117px offset;
             pr-[67px] preserves the site's standard right gutter before the image. */}
-        <div className="flex flex-1 flex-col gap-[51px] pl-6 pr-6 pt-0 lg:pl-[117px] lg:pr-[67px] lg:pt-[120.4557px]">
+        <div className="flex flex-col gap-[57px] pl-6 pr-6 pt-0 lg:pl-[117px] lg:pr-[67px] lg:pt-[120px]">
           <h2 className="max-w-[634px] font-serif text-h2 font-light text-ink">
             You&rsquo;re holding onto hope that life can be better than it is
             right now.
@@ -20,9 +20,10 @@ export default function Empathy() {
 
           {/* Confirmed: eyebrow + first paragraph stack in the LEFT column;
               second paragraph stands alone in the RIGHT column. */}
-          <div className="grid max-w-[720px] grid-cols-1 gap-5 md:grid-cols-2">
+          <div className="grid max-w-[684px] grid-cols-1 gap-5 md:grid-cols-2">
             <div className="flex flex-col gap-5">
-              <Eyebrow>
+
+              <Eyebrow className="pr-[33px]">
                 At Conejo Valley Family Counseling we want to make that hope
                 a reality.
               </Eyebrow>
@@ -47,15 +48,14 @@ export default function Empathy() {
         </div>
 
         {/* Right image — confirmed 399×637px.
-            Top offset: section py-[93.5443px] ≈ 94px from section top ✓
-            Bottom offset: 861 - 94 - 637 = 130px from section bottom ✓
-            shrink-0 prevents the image from compressing under the flex-1 text. */}
+            Top offset: section py-section-md ≈ 96px from section top ✓
+            Bottom offset: 861 - 96 - 637 = 128px from section bottom ✓ */}
         <TintedImage
           src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7a40691c-70a5-4307-b9ae-974592087a8f/Jennifer+A+-+Images+%283%29.jpg"
           alt="Sandy beach with gentle ocean waves and a cloudy sky"
           tint="tan"
           sizes="(min-width: 1024px) 399px, 100vw"
-          className="hidden lg:block lg:h-[637px] lg:w-[399px] lg:shrink-0"
+          className="hidden lg:block lg:h-[637px] lg:w-full"
         />
       </div>
     </section>

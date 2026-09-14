@@ -23,25 +23,33 @@ const COLUMN_TWO = [
 /* Confirmed per-item spec:
    - Outer li wrapper: 388×63px
    - Text: 15px Muli / line-height 27px / weight 300 / uppercase (Eyebrow token ✓)
-   - "27px from top": pt-[27px] places text 27px below li top.
-   - pb-[9px]: 27(pt) + 27(text) + 9(pb) = 63px ✓
-   - border-t border-tan on all items except first */
+   - Items align to top-left of the wrapper: pt-0 pb-[36px]
+   - 0(pt) + 27(text) + 36(pb) = 63px ✓
+   - border-b border-tan 12px above the bottom on all items except last */
 function ExpertiseColumn({ items }) {
   return (
-    <ul>
-      {items.map((item, i) => (
-        <li key={item.name} className={i > 0 ? "border-t border-tan" : ""}>
-          <Eyebrow as="div" className="pt-0 pb-[36px]">
-            {item.href ? (
-              <a href={item.href} className="hover:text-teal">
-                {item.name}
-              </a>
-            ) : (
-              item.name
-            )}
-          </Eyebrow>
-        </li>
-      ))}
+    <ul className="flex flex-col gap-[11px]">
+      {items.map((item, i) => {
+        const isLast = i === items.length - 1;
+        return (
+          <li key={item.name}>
+            <Eyebrow
+              as="div"
+              className={`pt-0 ${
+                isLast ? "pb-[36px]" : "pb-[24px] mb-[12px] border-b border-tan"
+              }`}
+            >
+              {item.href ? (
+                <a href={item.href} className="hover:text-teal">
+                  {item.name}
+                </a>
+              ) : (
+                item.name
+              )}
+            </Eyebrow>
+          </li>
+        );
+      })}
     </ul>
   );
 }

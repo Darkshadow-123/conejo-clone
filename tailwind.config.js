@@ -35,15 +35,20 @@ module.exports = {
         h2: ["45.4687px", { lineHeight: "58.8183px", letterSpacing: "-0.01em" }],
         h3: ["37.4506px", { lineHeight: "49.4948px", letterSpacing: "-0.01em" }],
         h4: ["26.2253px", { lineHeight: "35.6874px", letterSpacing: "-0.01em" }],
-        body: ["16.6036px", { lineHeight: "29.8865px" }],
+        body: ["16px", { lineHeight: "30px" }],
         eyebrow: ["15px", { lineHeight: "27px", letterSpacing: "0.12em" }],
         btn: ["12.5946px", { lineHeight: "normal", letterSpacing: "0.12em" }],
         // Nav link style — confirmed distinct from btn: 13.3964px / 1.8× line-height
         // / 1.33964px letter-spacing / 1.33964px 0px padding (DevTools computed).
         // Visually "heavier" than btn because of the larger size + tight tracking.
         navlink: ["13.3964px", { lineHeight: "24.1135px", letterSpacing: "1.33964px" }],
-        // Footer link/content style — 14.9433px / 26.8979px line-height (DevTools computed).
-        footerlink: ["14.9433px", { lineHeight: "26.8979px" }],
+        // Footer link/content style
+        footerlink: ["15px", { lineHeight: "27px" }],
+      },
+      spacing: {
+        'section-sm': '88px',
+        'section-md': '96px',
+        'section-lg': '112px',
       },
       maxWidth: {
         site: "1321px", // confirmed container max-width, repeats across 7+ sections

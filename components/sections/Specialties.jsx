@@ -55,13 +55,15 @@ export default function Specialties() {
           <div key={item.heading} className="flex flex-col">
             {/* Confirmed: outer div containing h4+p is 339×275px.
                 Width is set by the parent grid cell (339px).
-                Height (275px) is naturally driven by the content at this width. */}
-            <div>
+                Height (275px) is now explicitly set so shorter text (like Special Needs)
+                doesn't break the uniform dimensions of the grid. */}
+            <div className="lg:h-[275px]">
               <h4 className="font-serif text-h4 font-light text-ink">
                 {item.heading}
               </h4>
-              {/* Confirmed: p has margin: 15px 0 0 */}
-              <p className="mt-[30px] font-sans text-body text-ink">{item.body}</p>
+              <p className="mt-[30px] font-sans text-body text-ink lg:h-[180px]">
+                {item.body}
+              </p>
             </div>
             {/* Confirmed: 11px gap between "Learn more" and the h4+p div above.
                 display:flex justify-content:flex-start on the learn-more container. */}
