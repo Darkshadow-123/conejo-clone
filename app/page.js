@@ -19,8 +19,8 @@ export default function HomePage() {
       <Header />
       <main>
         <Hero />
-        <About />
         <Empathy />
+        <About />
         <WhoWeHelp />
         <PhotoStatement />
         <AreasOfExpertise />

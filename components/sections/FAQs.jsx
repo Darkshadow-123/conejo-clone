@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Container from "../ui/Container";
 import Eyebrow from "../ui/Eyebrow";
 import Script from "../ui/Script";
@@ -25,7 +28,48 @@ const FAQS = [
   },
 ];
 
+function FAQItem({ item, isOpen, onToggle, isLast }) {
+  return (
+    <div className={`py-6 ${!isLast ? "border-b border-slate/20" : ""}`}>
+      <button
+        onClick={onToggle}
+        aria-expanded={isOpen}
+        className="flex w-full cursor-pointer items-center justify-between gap-6 text-left font-serif text-h4 font-light text-slate"
+      >
+        <span>{item.q}</span>
+        {/* The + rotates 45deg to become × when open */}
+        <span
+          className={`shrink-0 text-h4 font-light text-rust transition-transform duration-300 ease-in-out ${
+            isOpen ? "rotate-45" : "rotate-0"
+          }`}
+        >
+          +
+        </span>
+      </button>
+
+      {/* Smooth height animation via grid-rows trick:
+          grid-rows-[0fr] → grid-rows-[1fr] lets the inner div grow from 0 height.
+          The inner div needs min-h-0 so it can actually collapse to zero. */}
+      <div
+        className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${
+          isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+        }`}
+      >
+        <div className="min-h-0 overflow-hidden">
+          <p className="mt-4 max-w-2xl font-sans text-body text-slate pb-1">
+            {item.a}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function FAQs() {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggle = (i) => setOpenIndex((prev) => (prev === i ? null : i));
+
   return (
     <section id="faqs" className="bg-greige">
       <Container className="py-section-md">
@@ -38,20 +82,13 @@ export default function FAQs() {
 
         <div className="mx-auto flex max-w-3xl flex-col">
           {FAQS.map((item, i) => (
-            <details
+            <FAQItem
               key={item.q}
-              className={`group py-6 ${i !== FAQS.length - 1 ? "border-b border-greige" : ""}`}
-            >
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 font-serif text-h4 font-light text-slate">
-                {item.q}
-                <span className="shrink-0 text-h4 font-light text-rust transition-transform duration-300 group-open:rotate-45">
-                  +
-                </span>
-              </summary>
-              <p className="mt-4 max-w-2xl font-sans text-body text-slate">
-                {item.a}
-              </p>
-            </details>
+              item={item}
+              isOpen={openIndex === i}
+              onToggle={() => toggle(i)}
+              isLast={i === FAQS.length - 1}
+            />
           ))}
         </div>
       </Container>
