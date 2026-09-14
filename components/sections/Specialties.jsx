@@ -24,7 +24,7 @@ export default function Specialties() {
     /*  Confirmed: 1321×966px, bg-stone.
         Desktop uses absolute positioning so H3 (92px from top) and cards (111px from
         top) can have different top offsets independently — impossible with normal flow. */
-    <section id="specialties" className="relative bg-stone lg:h-[966px]">
+    <section id="specialties" className="relative h-auto bg-stone lg:h-[966px]">
 
       {/* ── H3 ─────────────────────────────────────────────────────────────────────
           Mobile: normal flow with py padding.
@@ -42,10 +42,10 @@ export default function Specialties() {
           Each card cell: 339px wide.
           Column gap: 61px (confirmed).
           Row gap: 113px (confirmed). */}
-      <div className="grid grid-cols-1 gap-x-[61px] gap-y-[113px] px-6 pb-[88px] pt-8
+      <div className="grid grid-cols-1 gap-x-[61px] gap-y-12 px-6 pb-[88px] pt-8
                       sm:grid-cols-2
                       lg:absolute lg:left-[517px] lg:top-[111px]
-                      lg:grid-cols-[339px_339px] lg:p-0">
+                      lg:grid-cols-[339px_339px] lg:gap-y-[113px] lg:p-0">
         {SPECIALTIES.map((item) => (
           <div key={item.heading} className="flex flex-col">
             {/* Confirmed: outer div containing h4+p is 339×275px.

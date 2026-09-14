@@ -19,7 +19,7 @@ export default function Hero() {
           className="aspect-[4/5] lg:aspect-auto lg:h-[561px] lg:self-end lg:mb-[74px]"
         />
 
-        <div className="flex flex-col pl-[100px] pr-[66.8174px] pt-[41px] pb-[74px]">
+        <div className="flex flex-col px-6 py-12 lg:pb-[74px] lg:pl-[100px] lg:pr-[66.8174px] lg:pt-[41px]">
           {/* Eyebrow: 41px from container top (set by pt-[41px] above) */}
           <Eyebrow className="max-w-md">
             Online &amp; in-person therapy in Santa Monica &amp; across CA
@@ -29,7 +29,7 @@ export default function Hero() {
               mt-[153px] = 221 - 41(pt) - 27(eyebrow height) = 153px gap.
               This large gap is Squarespace fluid engine empty rows — intentional.
               mb-[30px]: confirmed margin: 0 0 30px in DevTools. */}
-          <h1 className="mt-[126px] mb-[30px] max-w-[588px] font-serif text-h1 font-light text-slate">
+          <h1 className="mb-[30px] mt-12 max-w-[588px] font-serif text-h1 font-light text-slate lg:mt-[126px]">
             Find your way back to calm, clarity, and steady{" "}
             <Script>ground</Script>.
           </h1>

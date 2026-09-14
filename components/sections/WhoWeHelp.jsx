@@ -30,11 +30,11 @@ export default function WhoWeHelp() {
   return (
     <section className="bg-stone">
       <Container className="py-[88px]">
-        <h2 className="mb-12 font-serif text-h2 font-light text-slate ml-[10px]">
+        <h2 className="mb-12 ml-0 font-serif text-h2 font-light text-slate lg:ml-[10px]">
           Who we <Script>help</Script>
         </h2>
 
-        <div className="grid grid-cols-1 gap-x-5 gap-y-12 md:grid-cols-3 pl-[151px]">
+        <div className="grid grid-cols-1 gap-x-5 gap-y-12 md:grid-cols-3 lg:pl-[151px]">
           {CARDS.map((card) => (
             <div key={card.heading}>
               <TintedImage

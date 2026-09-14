@@ -13,17 +13,17 @@ export default function Empathy() {
             pl-[117px] creates the 117px offset;
             pr-[67px] preserves the site's standard right gutter before the image. */}
         <div className="flex flex-col gap-[57px] pl-6 pr-6 pt-0 lg:pl-[117px] lg:pr-[67px] lg:pt-[120px]">
-          <h2 className="max-w-[634px] font-serif text-h2 font-light text-slate">
+          <h2 className="w-full max-w-[634px] font-serif text-h2 font-light text-slate">
             You&rsquo;re tired of feeling like you have to hold it all
             together.
           </h2>
 
           {/* Confirmed: eyebrow + first paragraph stack in the LEFT column;
               second paragraph stands alone in the RIGHT column. */}
-          <div className="grid max-w-[684px] grid-cols-1 gap-5 md:grid-cols-2">
+          <div className="grid w-full max-w-[684px] grid-cols-1 gap-5 md:grid-cols-2">
             <div className="flex flex-col gap-5">
 
-              <Eyebrow className="pr-[33px]">
+              <Eyebrow className="pr-0 lg:pr-[33px]">
                 At my Santa Monica practice, you don&rsquo;t have to carry it
                 alone.
               </Eyebrow>

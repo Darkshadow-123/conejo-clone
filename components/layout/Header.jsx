@@ -85,7 +85,7 @@ function NavDropdown({ label, items }) {
 export default function Header() {
   return (
     <header className="bg-stone">
-      <Container className="!px-[66.8174px] py-[18.7089px]">
+      <Container className="!px-6 py-4 lg:!px-[66.8174px] lg:py-[18.7089px]">
 
         <div className="flex min-h-[75px] items-center justify-between">
 
@@ -120,7 +120,7 @@ export default function Header() {
           {/* Mobile menu trigger - see design-audit.md Section 8; full
               accordion mega-menu behavior wasn't inspected, so this is a
               minimal placeholder toggle rather than an assumed animation. */}
-          <button className="lg:hidden" aria-label="Open menu">
+          <button className="ml-4 shrink-0 lg:hidden" aria-label="Open menu">
             <span className="block h-px w-6 bg-ink" />
             <span className="mt-1.5 block h-px w-6 bg-ink" />
             <span className="mt-1.5 block h-px w-6 bg-ink" />

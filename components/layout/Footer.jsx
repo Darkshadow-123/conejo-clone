@@ -34,7 +34,7 @@ export default function Footer() {
            Right: col 26 gutter = 55.8px + 11px gap = 67px (standard). */}
       <div className="relative mx-auto flex w-full max-w-site flex-col gap-10 px-6 py-[60.1357px] min-h-[441px] lg:h-[441px] lg:flex-row lg:px-0">
         {/* Left Column: occupies 0 to 566px. Logo at 67px (90-23=67), paragraph at 90px */}
-        <div className="w-full lg:w-[566px] lg:pl-[90px] shrink-0">
+        <div className="w-full shrink-0 lg:w-[566px] lg:pl-[90px]">
           <a href="/" className="inline-block transition-opacity hover:opacity-90">
             <Logo align="left" />
           </a>
@@ -116,8 +116,8 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto flex h-[40px] w-full max-w-site items-center bg-rust font-sans text-body font-light text-slate">
-        <div className="flex flex-wrap items-center gap-2 px-[91px] font-sans text-footerlink font-light text-slate">
+      <div className="mx-auto flex h-auto min-h-[40px] w-full max-w-site items-center bg-rust py-2 font-sans text-body font-light text-slate lg:h-[40px] lg:py-0">
+        <div className="flex flex-wrap items-center gap-2 px-6 font-sans text-footerlink font-light text-slate lg:px-[91px]">
           <a
             href="https://www.conejovalleycounseling.com/terms"
             className="inline-block h-[27px] font-sans text-footerlink font-light text-tan hover:opacity-80"

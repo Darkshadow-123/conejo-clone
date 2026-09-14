@@ -26,7 +26,7 @@ export default function Honoring() {
              pl-[11px]: the Squarespace 11px column gap between image and text.
              pr-[67px]: 67px right margin (confirmed).
              self-end: Squarespace places H2 in the lower rows → bottom-aligned. */}
-        <h2 className="w-[488px] shrink-0 self-end ml-4 pr-4 font-serif text-h2 font-light text-slate lg:ml-[61px] lg:pr-0">
+        <h2 className="ml-4 w-full shrink-0 self-end pr-4 font-serif text-h2 font-light text-slate lg:ml-[61px] lg:w-[488px] lg:pr-0">
           Honoring where you&rsquo;ve been <Script>&amp;</Script> helping
           shape where you&rsquo;re headed.
         </h2>

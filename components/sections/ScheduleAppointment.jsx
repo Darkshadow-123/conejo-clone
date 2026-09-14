@@ -9,7 +9,7 @@ export default function ScheduleAppointment() {
         padding: 88.199px 0px.
         88.199(top) + 623(inner) + 88.199(bottom) = 799.4 ≈ 799px ✓
         Using CSS Grid to correctly model the 111px horizontal gaps previously hidden in paddings. */
-    <section id="contact" className="bg-oatmeal lg:h-[799px]">
+    <section id="contact" className="h-auto bg-oatmeal lg:h-[799px]">
       <div className="mx-auto grid w-full max-w-site grid-cols-1 lg:grid-cols-[156px_1fr_455px] lg:gap-[111px]">
 
         {/* Left image — confirmed 156×475px, 199px from section top. */}
@@ -31,7 +31,7 @@ export default function ScheduleAppointment() {
           <Eyebrow>Schedule an appointment</Eyebrow>
 
           {/* Confirmed gaps (y-axis): eyebrow→h2: 84px, h2→p: 30px, p→p: 15px, p→pill: 19px */}
-          <h2 className="mt-[84px] font-serif text-h2 font-light text-slate">
+          <h2 className="mt-12 font-serif text-h2 font-light text-slate lg:mt-[84px]">
             Ready to feel more like <Script>yourself</Script> again?
           </h2>
 

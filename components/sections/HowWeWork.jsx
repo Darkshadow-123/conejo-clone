@@ -7,7 +7,7 @@ export default function HowWeWork() {
     /*  Confirmed: 1321×918px, bg-greige.
         lg:h-[918px] locks the section to exactly 918px so text column height
         cannot push it taller. The image is placed in a grid column with gap-6. */
-    <section className="relative bg-greige lg:h-[915px] lg:overflow-hidden">
+    <section className="relative h-auto bg-greige lg:h-[915px] lg:overflow-hidden">
       <div className="mx-auto grid w-full max-w-site grid-cols-1 gap-6 py-section-lg lg:grid-cols-[1fr_298px] lg:h-full">
         {/* Text column — confirmed 117px from section left.
             lg:pr-0 removes the old absolute offset; gap-6 keeps text clear of the image. */}
@@ -15,12 +15,12 @@ export default function HowWeWork() {
           <div className="flex flex-col gap-32">
             <Eyebrow>How we work</Eyebrow>
 
-            <h2 className="max-w-[840px] font-serif text-h2 font-light text-slate">
+            <h2 className="w-full max-w-[840px] font-serif text-h2 font-light text-slate">
               Practical tools, real depth &mdash; therapy that fits your
               life.
             </h2>
           </div>
-          <div className="grid max-w-[784px] grid-cols-1 gap-5 md:grid-cols-2">
+          <div className="grid w-full max-w-[784px] grid-cols-1 gap-5 md:grid-cols-2">
             <div className="flex flex-col gap-5">
               <Eyebrow>
                 The clients I work with are balancing so many responsibilities, it&rsquo;s often hard for them to put themselves
