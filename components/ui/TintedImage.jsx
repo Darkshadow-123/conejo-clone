@@ -8,9 +8,9 @@ import Image from "next/image";
  * the "Who We Help" photos. Pass tint="tan" | "white" | "none" per image.
  */
 const TINTS = {
-  tan: "bg-tan/[0.14]",          // confirmed #e3d9ca24 (~14%) — hero right, empathy, honoring
-  "tan-light": "bg-tan/[0.07]", // confirmed #e3d9ca12 (~7%)  — hero left image only
-  white: "bg-white/[0.11]",     // confirmed #ffffff1c (~11%) — Who We Help photos
+  tan: "bg-greige/[0.14]",          // confirmed #e3d9ca24 (~14%) — hero right, empathy, honoring
+  "tan-light": "bg-greige/[0.07]", // confirmed #e3d9ca12 (~7%)  — hero left image only
+  white: "bg-stone/[0.11]",     // confirmed #ffffff1c (~11%) — Who We Help photos
   none: "",
 };
 

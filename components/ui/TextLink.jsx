@@ -11,10 +11,10 @@ export default function TextLink({ href, children, className = "" }) {
       className={`
         relative inline-block
         py-[9px]
-        font-sans text-btn uppercase text-ink
+        font-sans text-btn uppercase text-rust
         no-underline
         after:absolute after:bottom-0 after:left-0
-        after:h-px after:w-full after:bg-ink
+        after:h-px after:w-full after:bg-rust
         after:transition-[width] after:duration-700 after:ease-out
         hover:after:w-0
         ${className}

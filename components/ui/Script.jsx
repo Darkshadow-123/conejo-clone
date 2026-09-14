@@ -5,5 +5,5 @@
  * do not set a fixed size here.
  */
 export default function Script({ children, className = "" }) {
-  return <span className={`font-script text-teal ${className}`}>{children}</span>;
+  return <span className={`font-script text-rust ${className}`}>{children}</span>;
 }

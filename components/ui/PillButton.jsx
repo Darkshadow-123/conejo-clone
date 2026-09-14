@@ -11,11 +11,11 @@ export default function PillButton({ href, children, className = "" }) {
       href={href}
       className={`
         inline-flex items-center justify-center
-        rounded-[100%] border border-ink
+        rounded-[100%] border border-slate
         px-[19.5px] py-[15px]
-        font-sans text-btn uppercase text-ink
+        font-sans text-btn uppercase text-slate
         transition-colors duration-300 ease-out
-        hover:bg-pureblack hover:border-pureblack hover:text-white
+        hover:bg-charcoal hover:border-slate hover:text-stone
         ${className}
       `}
     >

@@ -6,7 +6,7 @@
  */
 export default function Eyebrow({ as: Tag = "p", children, className = "" }) {
   return (
-    <Tag className={`font-sans text-eyebrow uppercase text-ink ${className}`}>
+    <Tag className={`font-sans text-eyebrow uppercase text-slate ${className}`}>
       {children}
     </Tag>
   );
