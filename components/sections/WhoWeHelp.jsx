@@ -21,7 +21,7 @@ const CARDS = [
     heading: "Trauma Survivors",
     href: null,
     body: "Whether navigating single-event trauma or complex relational patterns, our trauma therapy in Santa Monica is paced carefully. Utilizing EMDR and somatic stabilization, we restore safety, empowerment, and emotional resilience.",
-    img: "/images/Trauma-survivors.jpg",
+    img: "/images/Trauma-Survivors.jpg",
     alt: "Trauma recovery client experiencing emotional grounding and peace",
   },
 ];

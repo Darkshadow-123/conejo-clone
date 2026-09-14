@@ -21,7 +21,7 @@ export default function About() {
             <div className="flex flex-col gap-3">
               <Eyebrow>Licensed Clinical Psychologist &middot; Santa Monica, CA</Eyebrow>
               <h2 className="font-serif text-h2 font-light text-ink">
-                Meet Dr. Maya <Script>Reynolds</Script>, PsyD
+                Dr. Maya <Script>Reynolds</Script>, PsyD
               </h2>
             </div>
 
